@@ -1,0 +1,68 @@
+#python
+#translator (encryptor) caesar cipher (ROT13)
+#after return function terminates
+#cryptography
+#cybersecurity
+
+
+def caesar(message):
+    trans = ""
+    for cipher in message:
+        if cipher == "a" or cipher == "A":
+            trans = trans + "n"
+        elif cipher == "b" or cipher == "B":
+            trans = trans + "o"
+        elif cipher == "c" or cipher == "C":
+            trans  = trans +  "p"
+        elif cipher == "d" or cipher == "D":
+            trans = trans +"q"
+        elif cipher == "e" or cipher == "E":
+            trans =trans + "r"
+        elif cipher == "f" or cipher == "F":
+            trans = trans +"s"
+        elif cipher == "g" or cipher == "G":
+            trans = trans +  "t"
+        elif cipher == "h" or cipher == "H":
+            trans = trans + "u"
+        elif cipher == "i" or cipher == "I":
+            trans = trans + "v"
+        elif cipher == "j" or cipher == "J":
+            trans =  trans + "w"
+        elif cipher == "k" or cipher == "K":
+            trans  = trans + "x"
+        elif cipher == "l" or cipher == "L":
+            trans = trans +"y"
+        elif cipher == "m" or cipher == "M":
+            trans  = trans + "z"
+        elif cipher == "n" or cipher == "N":
+            trans  = trans + "a"
+        elif cipher == "o" or cipher == "O":
+            trans  = trans + "b"
+        elif cipher == "p" or cipher == "P":
+            trans  = trans + "c"
+        elif cipher == "q" or cipher == "Q":
+            trans  = trans + "d"
+        elif cipher == "r" or cipher == "R":
+            trans  = trans + "e"
+        elif cipher == "s" or cipher == "S":
+            trans  = trans + "f"
+        elif cipher == "t" or cipher == "T":
+            trans  = trans + "g"
+        elif cipher == "u" or cipher == "U":
+            trans  = trans + "h"
+        elif cipher == "v" or cipher == "V":
+            trans  = trans +  "i"
+        elif cipher == "w" or cipher == "W":
+            trans  = trans +  "j"
+        elif cipher == "x" or cipher == "X":
+            trans  = trans +  "k"
+        elif cipher == "y" or cipher == "Y":
+            trans  = trans +  "l"
+        elif cipher == "z" or cipher == "Z":
+            trans  = trans +  "m"
+        else:
+            trans = trans + cipher
+    print("ENCRYPTED MESSAGE IS : ")
+    return trans
+
+print(caesar(raw_input("Enter a message you want to encrypt(letters): ")))
